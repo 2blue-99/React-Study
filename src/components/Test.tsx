@@ -4,8 +4,11 @@ export default function TestComponent() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-      <h1 onClick={() => setCount(count + 1)}>ㅇㅇㅇ{count}ㅇㅇㅇ</h1>
-    </>
+    <div className="flex flex-col">
+      <p className="text">ㅇㅇㅇ</p>
+      <h1>ㅇㅇㅇ</h1>
+      <h1>ㅇㅇㅇ</h1>
+      <h1>ㅇㅇㅇ</h1>
+    </div>
   );
 }

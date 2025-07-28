@@ -1,3 +1,4 @@
+import type { Action } from "./messengerReducer";
 import type { Contact } from "./Msessenger";
 
 export default function ContactList({
@@ -7,7 +8,7 @@ export default function ContactList({
 }: {
   contacts: Contact[];
   selectedId: number;
-  dispatch: React.ActionDispatch<[action: any]>;
+  dispatch: React.ActionDispatch<[action: Action]>;
 }) {
   return (
     <section className="contact-list">
@@ -19,6 +20,7 @@ export default function ContactList({
                 dispatch({
                   type: "changed_selection",
                   contactId: contact.id,
+                  message: "",
                 });
               }}
             >

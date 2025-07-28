@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { Contact } from "./Msessenger";
+import type { Action } from "./messengerReducer";
 
 export default function Chat({
   contact,
@@ -8,7 +9,7 @@ export default function Chat({
 }: {
   contact: Contact;
   message: string;
-  dispatch: React.ActionDispatch<[action: any]>;
+  dispatch: React.ActionDispatch<[action: Action]>;
 }) {
   return (
     <section className="chat">
