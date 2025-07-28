@@ -19,6 +19,9 @@ import Messenger from "./components/reducer/Msessenger";
 import ContextTest from "./components/context/ContextTest";
 import TestApp from "./components/context-test/TestApp";
 import TaskApp from "./components/context-reducer/TaskApp";
+import Counter from "./components/ref/RefCounter";
+import Form from "./components/ref/Form";
+import MyForm from "./components/ref/MyForm";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -96,8 +99,14 @@ function App() {
     // </>
     // <TaskApp />
     // <TestComponent />
+    // <>
+    //   <Counter />
+    // </>
+    // <>
+    //   <Form />
+    // </>
     <>
-      <h1>ㅇㅇ</h1>
+      <MyForm />
     </>
   );
 }
